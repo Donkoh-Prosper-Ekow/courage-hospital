@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Courage Hospital System">
+    <output-path>$PROJECT_DIR$/out/artifacts/Courage_Hospital_System</output-path>
+    <root id="archive" name="Courage Hospital System.jar">
+      <element id="archive" name="Courage_Hospital.jar">
+        <element id="module-output" name="Courage Hospital" />
+      </element>
+    </root>
+  </artifact>
+</component>

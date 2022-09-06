@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="513.0" prefWidth="804.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hospital.couragehospital.PharmacyController">
+    <VBox prefHeight="513.0" prefWidth="233.0" style="-fx-background-color: #f5ab1d;">
+        <children>
+          <ImageView fitHeight="173.0" fitWidth="173.0">
+              <image>
+                  <Image url="@../../../../img/personal.png" />
+              </image>
+              <VBox.margin>
+                  <Insets bottom="22.0" left="30.0" top="55.0" />
+              </VBox.margin>
+          </ImageView>
+          <Label alignment="TOP_CENTER" prefHeight="40.0" prefWidth="233.0" text="COURAGE" textFill="WHITE">
+              <font>
+                  <Font name="System Bold" size="29.0" />
+              </font>
+          </Label>
+          <Label alignment="TOP_CENTER" layoutX="10.0" layoutY="260.0" prefHeight="40.0" prefWidth="233.0" text="HOSPITAL" textFill="WHITE">
+              <font>
+                  <Font name="System Bold" size="29.0" />
+              </font>
+          </Label>
+         <ImageView blendMode="OVERLAY" fitHeight="175.0" fitWidth="250.0" pickOnBounds="true">
+            <image>
+               <Image url="@../../../../img/Hospital-Management-System.jpg" />
+            </image>
+         </ImageView>
+        </children>
+    </VBox>
+    <Label alignment="CENTER" layoutX="380.0" layoutY="63.0" prefHeight="52.0" prefWidth="243.0" text="PHARMACY" textFill="#f5ab1d">
+        <font>
+          <Font name="System Bold" size="31.0" />
+        </font>
+    </Label>
+    <Separator layoutX="401.0" layoutY="109.0" prefWidth="200.0" />
+    <GridPane layoutX="311.0" layoutY="139.0" prefHeight="235.0" prefWidth="361.0">
+      <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="221.0" minWidth="10.0" prefWidth="152.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="167.0" minWidth="10.0" prefWidth="22.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="187.0" minWidth="10.0" prefWidth="187.0" />
+      </columnConstraints>
+      <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+        <children>
+          <Label alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="235.0" text="Drug ID">
+              <font>
+                  <Font name="System Bold" size="14.0" />
+              </font>
+          </Label>
+          <Label alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="317.0" text="Drug Name" GridPane.rowIndex="1">
+              <font>
+                  <Font name="System Bold" size="14.0" />
+              </font>
+          </Label>
+          <Label alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="283.0" text="Manufacturing Date" GridPane.rowIndex="2">
+              <font>
+                  <Font name="System Bold" size="14.0" />
+              </font>
+          </Label>
+          <Label alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="344.0" text="Expiry Date" GridPane.rowIndex="3">
+              <font>
+                  <Font name="System Bold" size="14.0" />
+              </font>
+          </Label>
+          <Label alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="343.0" text="Drug in Stock" GridPane.rowIndex="4">
+              <font>
+                  <Font name="System Bold" size="14.0" />
+              </font>
+          </Label>
+          <Label alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="303.0" text="Drug out of stock" GridPane.rowIndex="5">
+              <font>
+                  <Font name="System Bold" size="14.0" />
+              </font>
+          </Label>
+          <Label alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="329.0" text="Price" GridPane.rowIndex="6">
+              <font>
+                  <Font name="System Bold" size="14.0" />
+              </font>
+          </Label>
+          <TextField fx:id="drugid" GridPane.columnIndex="2" />
+          <TextField fx:id="drugname" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+          <TextField fx:id="dis" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+          <TextField fx:id="doos" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+          <TextField fx:id="price" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+         <TextField fx:id="manudate" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+         <TextField fx:id="expdate" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+        </children>
+    </GridPane>
+    <Button fx:id="cancel" layoutX="401.0" layoutY="408.0" mnemonicParsing="false" onAction="#onCancelClick" prefHeight="25.0" prefWidth="74.0" text="Cancel">
+        <font>
+          <Font name="System Bold" size="13.0" />
+        </font>
+    </Button>
+    <Button fx:id="save" layoutX="487.0" layoutY="408.0" mnemonicParsing="false" onAction="#onSaveClick" prefHeight="25.0" prefWidth="74.0" text="Save">
+        <font>
+          <Font name="System Bold" size="13.0" />
+        </font>
+    </Button>
+</AnchorPane>
